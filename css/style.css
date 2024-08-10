@@ -1,0 +1,121 @@
+/* Color Variables for Background Animation */
+:root {
+    --color1: #FF7F50; /* Coral */
+    --color2: #FFD700; /* Gold */
+    --color3: #87CEEB; /* SkyBlue */
+}
+
+body {
+    background-color: var(--color1);
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: colorChange 10s infinite;
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: var(--color1);
+    }
+    25% {
+        background-color: var(--color2);
+    }
+    50% {
+        background-color: var(--color3);
+    }
+    75% {
+        background-color: var(--color2);
+    }
+    100% {
+        background-color: var(--color1);
+    }
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    color: white;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+}
+
+.container {
+    margin: auto;
+    max-width: 955px;
+    border: 5px solid black;
+    border-radius: 10px;
+    height: 60vh;
+    padding: 20px; /* Padding inside the container */
+    background-color: rgba(255, 255, 255, 0.8);
+    overflow-y: auto;
+    margin-bottom: 23px;
+    margin-top: 30px; /* Margin to create space between the header and the chat section */
+}
+
+.message {
+    background-color: #cae5d8;
+    max-width: 70%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid black;
+    border-radius: 10px;
+    clear: both;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#send-container {
+    width: 100%;
+    max-width: 955px;
+    display: flex;
+    justify-content: center;
+}
+
+#messageInp {
+    width: 90%;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 6px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 6px;
+    background-color: #000;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #555;
+}
